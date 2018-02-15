@@ -1,0 +1,23 @@
+.navbar-nav  li a:hover {
+      color:bisque!important;
+}
+.navbar-nav  li a {
+      color:white!important;
+}
+.nav-link{
+    text-align: right;
+}
+
+#current{
+    color: bisque!important;
+    text-decoration: underline;
+}
+
+
+#mylogo{
+    color:black;
+    background-color: bisque;
+    padding:5px;
+    border-radius: 19px;
+    
+}

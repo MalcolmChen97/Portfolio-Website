@@ -1,0 +1,553 @@
+@font-face {
+  font-family: 'Calluna';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/CallunaSansRegular.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body{
+    background-color: black;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+button{
+    margin-right: 20px;
+   
+}
+
+div.maincontent{
+  font-family: Calluna, Arial, sans-serif;
+  
+  color: #fff;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 45%;
+}
+img.mainpig {
+  /* Set rules to dimensions */
+  min-height: 100%;
+  min-width: 1280px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+    z-index: -99;
+}
+
+#divline1{
+    width: 100%;
+    height: 11px;
+}
+
+#secondid{
+    position: relative;
+    top:-30px;
+    font-size:1.5em;
+}
+
+.introduction{
+    width:65%;
+    margin-left: auto ;
+    margin-right: auto ;
+    position: relative;
+    top:-30px;
+    
+}
+
+img.center{
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.introduction p{
+    color:beige;
+    font-size: 1.3em;
+}
+
+
+
+/*dsadsa*/
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: lightgoldenrodyellow;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.contain {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.contain::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.right {
+    left: 50%;
+}
+.left {
+    left: 0;
+}
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent lightgoldenrodyellow;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent lightgoldenrodyellow transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -13px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    border-radius: 6px;
+    color: black;
+}
+
+
+.navbar-nav  li a:hover {
+      color:bisque!important;
+}
+.navbar-nav  li a {
+      color:white!important;
+}
+.nav-link{
+    text-align: right;
+}
+
+#current{
+    color: bisque!important;
+    text-decoration: underline;
+}
+
+
+#mylogo{
+    color:black;
+    background-color: bisque;
+    padding:5px;
+    border-radius: 19px;
+    margin-left:10px;
+}
+
+
+
+
+h1.xie{
+    color:white;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    margin-bottom: 40px;
+}
+
+h1 a{
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color:white;
+    
+}
+h1 a{
+    color:white;
+    
+}
+h1 a:hover{
+    color:white;
+    text-decoration: none;
+    
+}
+#msign{
+    width: 70%;
+    height:15%;
+}
+
+.haha-mine{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+hr { background-color: darkkhaki; height: 1px; border: 0; }
+
+
+
+
+
+/*Same reference here as in HTML */
+.skillbar {
+  font-family:sans-serif;
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:77px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding-left: 5px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+    
+    
+	background:#6adcfa;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+.skillset{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*end of skillset*/
+
+
+/*W3C school*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.mypassion img:hover{
+    opacity: 0.7;
+}
+
+
+#contactbutton{
+    border: 3px solid white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*back to top*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: none; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.havefun{
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+}
+.havefun p{
+    color: white;
+    text-align: center;
+    font-size:3em;
+   
+}
+
+.projects{
+   padding-top: 35%;
+}
+
+#firstproject{
+    padding:0px 5%;
+    
+}
+
+
+img.center2{
+    width: 50%;
+    display: block;
+    margin:0 auto;
+}
+
+img.fleft{
+    margin-left: 5%;
+    width: 45%;
+    float: left;
+}
+img.rleft{
+    width: 45%;
+    float: right;
+    margin-right: 5%;
+}
+.projectext{
+    color: white;
+}
+
+.projectext .projectname{
+    text-align: center;
+}
+.projectext .projectlanguage{
+    text-align: center;
+}
+.projectext .projectdescription{
+    display: block;;
+    padding-left: 55%;
+    padding-right: 5%;
+    font-size: 1.5em;
+}
+
+.secondproject{
+    margin-top:20%;
+}
+.projectext .rightprojectdescription{
+    display: block;;
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 1.5em;
+}
+
+.pro{
+    opacity: 0;
+}
+
+
+
+
+
+@media only screen and (min-width: 992px){
+    #msign{
+        width: 48%;
+        height:15%
+    }
+}
+
+
+@media screen and (max-width: 1280px) { /* Specific to this particular image */
+  img.mainpig {
+    left: 50%;
+    margin-left: -640px;   /* 50% */
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .havefun{
+        margin-top: 30%;
+        position: relative;
+    }
+    .projects{
+        padding-top: 55%;
+    }
+    img.fleft{
+    width: 80%;
+        display: block;
+        margin: auto;
+        float: none;
+    }
+    img.rleft{
+    width: 80%;
+        display: block;
+        margin: auto;
+        float: none;
+    }
+    .projectext .projectdescription{
+    display: block;;
+    padding-left: 10%;
+    padding-right: 10%;
+         font-size: 1em;
+    }
+    .projectext .rightprojectdescription{
+    display: block;;
+    padding-left: 10%;
+    padding-right: 10%;
+         font-size: 1em;
+    }
+    
+    .introduction{
+    width: 90%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .contain::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent lightgoldenrodyellow transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 576px){
+    .maincontent{
+    position: relative;
+    top:200px;
+    }
+    #divline1{
+    width: 100%;
+    height: 8px;
+}
+    .timeline::after {
+    
+    margin-left: -6px;
+    }   
+    
+    .haha-mine{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+    }
+}
